@@ -1,0 +1,60 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Ruwudu', serif;
+
+background-color: brown;
+color: aliceblue;}
+
+
+header{
+    background-image:url(cine.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 30px;
+    color: aliceblue;
+}
+.menu .barra ul{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+
+
+#menu{
+    display: none;
+}
