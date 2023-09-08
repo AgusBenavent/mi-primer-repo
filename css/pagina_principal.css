@@ -20,9 +20,10 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    max-width: 1500px;
+    width: 1500px;
+    height: 500px;
     margin: 0 auto;
 
 }
