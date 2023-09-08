@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-title">Peliculas Mas Valoradas</h1>
+
+    <section class="Portadas">
+
+<article>
+<img src="./img/peliculas_valoradas/elpadrino.jpeg" alt="El Padrino">
+<h2>El Padrino</h2>
+</article>
+
+<article>
+<img src="./img/peliculas_valoradas/forrestgump.webp" alt="Forrest Gump">
+<h2>Forrest Gump</h2>
+</article>
+
+<article>
+<img src="./img/peliculas_valoradas/lavidaesbella.jpeg" alt="La Vida es Bella">
+<h2>La Vida es Bella</h2>
+</article>
+
+<article>
+<img src="./img/peliculas_valoradas/salvaralsoldadoryan.jpeg" alt="Salvar al Soldado Ryan">
+<h2>Salvar al Soldado Ryan</h2>
+</article>
+
+<article>
+<img src="./img/peliculas_valoradas/unodelosnuestros.jpeg" alt="Uno de los Nuestros">
+<h2>Uno de los Nuestros</h2>
+</article>
+
+    </section>
+
+</body>
+
+</html>
