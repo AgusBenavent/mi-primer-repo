@@ -21,9 +21,10 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    
-    align-items: center;
-    
+    width: 1600px;
+    height: 400px;
+    align-items: self-start;
+    border: 5px solid black;
     margin: 0 auto;
 
 }
@@ -73,3 +74,10 @@ section{
 .nav-enlace:hover{
     background-color: rgba(88, 78, 78, 0.792);
 }
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
