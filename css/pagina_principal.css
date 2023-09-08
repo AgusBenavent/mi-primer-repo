@@ -38,7 +38,7 @@ section{
     top: 0%;
     left: 0%;
     right: 0%;
-    display: flex;
+    display: inline-block;
     align-items: center ;
     justify-content: space-between;
 }
@@ -57,4 +57,15 @@ section{
 
 #menu{
     display: none;
+}
+
+.nav-enlace{
+    display:inline-block;
+    background-color: black;
+    color: aliceblue;
+    padding: 10px 30px;
+    align-items: left;
+}
+.nav-enlace:hover{
+    background-color: rgba(88, 78, 78, 0.792);
 }
