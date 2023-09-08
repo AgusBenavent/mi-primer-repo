@@ -20,10 +20,10 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
 
 }
@@ -43,10 +43,15 @@ section{
     justify-content: space-between;
 }
 
-.logo{
-    font-size: 30px;
+.logo {
+    font-size: 40px;
     color: aliceblue;
+    
+    border-top: 10%;
+    border-left: 10%;
 }
+
+
 .menu .barra ul{
     display: flex;
     justify-content: space-between;
