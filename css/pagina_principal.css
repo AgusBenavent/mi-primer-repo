@@ -21,8 +21,9 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    
     align-items: center;
-    max-width: 1200px;
+    
     margin: 0 auto;
 
 }
@@ -41,10 +42,15 @@ section{
     justify-content: space-between;
 }
 
-.logo{
-    font-size: 30px;
+.logo {
+    font-size: 40px;
     color: aliceblue;
+    
+    border-top: 10%;
+    border-left: 10%;
 }
+
+
 .menu .barra ul{
     display: flex;
     justify-content: space-between;
