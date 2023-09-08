@@ -20,7 +20,6 @@ header{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 70vh;
     display: flex;
     align-items: center;
     max-width: 1200px;
@@ -34,12 +33,11 @@ section{
 }
 
 .menu{
-    position: absolute;
     top: 0%;
     left: 0%;
     right: 0%;
     display: inline-block;
-    align-items: center ;
+    align-items: flex-start ;
     justify-content: space-between;
 }
 
@@ -60,7 +58,7 @@ section{
 }
 
 .nav-enlace{
-    display:inline-block;
+    display:inline-flex;
     background-color: black;
     color: aliceblue;
     padding: 10px 30px;
