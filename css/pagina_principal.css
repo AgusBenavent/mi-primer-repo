@@ -21,7 +21,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    width: 100%;
+    width: 1500px;
     height: 400px;
     align-items: self-start;
     border: 5px solid black;
@@ -56,7 +56,6 @@ section{
     display: flex;
     justify-content: space-between;
     position: relative;
-    
 }
 
 
@@ -75,9 +74,10 @@ section{
     background-color: rgba(88, 78, 78, 0.792);
 }
 
-.PeliculasPopulares{
+main{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 
