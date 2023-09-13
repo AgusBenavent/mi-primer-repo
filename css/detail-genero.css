@@ -8,9 +8,10 @@
 
 body{
     font-family: 'DM Sans', sans-serif;
-    background-color:#9A3B3B;
+    background-color:white;
     display: flex;
     flex-direction: column;
+    
 }
 
 header{
@@ -73,51 +74,15 @@ button:hover{
     background: grey;
 }
 
-.separacion{
-    height: 300px;
-    background-image:url(cine.jpg);
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    
-main{
-    background-color:#0C223F;
-    border-radius: 10px;
+.itemaGenero{
+    display: inline-block;
+    background-color: aliceblue;
+    color:black;
+    padding: 10px 30px;
+    text-decoration: none;
 }
 
-.separacion{
-    background-color: #9A3B3B;
+.itemaGenero:hover{
+    background-color: grey;
+    text-decoration: none;
 }
-.parrafo{
-    display:inline-block;
-    justify-content: space-around;
-    text-align: left;
-    color: white;
-    padding-right: 40px;}
-.Fecha{
-
-padding-right: 40px;}
-
-.Texto{
-    background-color: black;
-    color: white;
-    text-align: center;
-    
-}
-section{
-    display: flex;
-    justify-content:flex-end;
-    flex-direction: row;
-    width: 95%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 70px;
-    
-}
-
-footer{
-    text-align: center;
-}
-
-
