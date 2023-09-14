@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background-color:#9A3B3B;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    height: 100px;
+
+}
+
+
+.imagenlogo{
+    display: inline-block;
+}
+
+.logo{
+    display: inline-block;
+    align-items: center;
+    color: white;
+    margin-right: 40px;
+    margin-top: 30px;
+
+}
+.navbarra{
+    display: inline-block;
+    justify-content: center;
+       
+}
+
+
+.nav-enlace{
+    display: inline-block;
+    text-decoration: none;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px; 
+}
+
+.nav-enlace:hover{
+    background: grey;
+}
+
+.form{
+    display: inline-block;
+    margin-left: 40px;
+}
+
+input{
+    display: inline-block;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+}
+button{
+    display:inline-block;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;}
+button:hover{
+    background: grey;
+}
+
+.separacion{
+    height: 300px;
+    background-image:url(cine.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+main{
+    background-color:#0C223F;
+    border-radius: 10px;
+}
+
+
+.parrafo{
+    display:inline-block;
+    justify-content: space-around;
+    text-align: left;
+    color: white;
+    padding-right: 40px;}
+    
+.Fecha{
+
+padding-right: 40px;}
+
+.Texto{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+section{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    width: 95%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    
+}
+
+footer{
+    text-align: center;
+}
