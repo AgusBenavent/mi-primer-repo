@@ -86,15 +86,14 @@ main{
     border-radius: 10px;
 }
 
-.separacion{
-    background-color: #9A3B3B;
-}
+
 .parrafo{
     display:inline-block;
     justify-content: space-around;
     text-align: left;
     color: white;
     padding-right: 40px;}
+    
 .Fecha{
 
 padding-right: 40px;}
@@ -107,12 +106,12 @@ padding-right: 40px;}
 }
 section{
     display: flex;
-    justify-content:flex-end;
+    justify-content:space-around;
     flex-direction: row;
     width: 95%;
     margin-bottom: 20px;
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 40px;
     
 }
 
@@ -120,4 +119,7 @@ footer{
     text-align: center;
 }
 
+article{
+    width: 200px;
+}
 

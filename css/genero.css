@@ -8,7 +8,7 @@
 
 body{
     font-family: 'DM Sans', sans-serif;
-    background-color:#9A3B3B;
+    background-color:#0C223F;
     display: flex;
     flex-direction: column;
 }
@@ -79,6 +79,18 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+    
+main{
+    background-color:#0C223F;
+    border-radius: 10px;
+}
+
+.Titulo{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
 
 .navGenero{
     display: inline-block;
@@ -86,25 +98,26 @@ button:hover{
    
 }
 
+
 .itemaGenero{
-    display: inline-block;
-   text-align: center;
+    display: inline-block;   
+    justify-content: space-around; 
     background-color: aliceblue;
-    color:black;
     margin: 5px;
     padding: 50px 30px;
-    text-decoration: none;
-    height: auto;
     width: 300px;
+    border-radius: 5px;
+    
 }
+
 
 .itemaGenero:hover{
     background-color: grey;
     text-decoration: none;
 }
 
-h2{
-    display: block;
-    text-align: center;
-    margin: 20px;
+.Text{
+    color: black;
+    font-size: 30px;
+    
 }
