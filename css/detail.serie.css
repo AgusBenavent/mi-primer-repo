@@ -21,7 +21,6 @@ header{
 
 }
 
-
 .imagenlogo{
     display: inline-block;
 }
@@ -116,6 +115,8 @@ h1{
 
 i{
     font-size: 90px;
+    color: white;
+    
 }
 
 
