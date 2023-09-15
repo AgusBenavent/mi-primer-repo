@@ -83,24 +83,28 @@ button:hover{
 }
 
 
-.contenedor1{
-    display:inline-block;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 50%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
+.padre{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+
 }
 
-.section{
-    display: flexbox;
-    height: 500px;
+.hijo1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
     background-image:url(fightclub.jpg);
     background-position: left ;
     background-repeat: no-repeat;
     background-size: contain;
    
+}
+
+.hijo2{
+    width: 50vw;
+    color: white;
 }
 h1{
     background-color: black;
@@ -109,9 +113,7 @@ h1{
 }
 
 .boton{
-    text-align: center;  
-    background-color: transparent;
-    
+    font-size: 70px; 
     
 }
 
@@ -119,10 +121,5 @@ h1{
     background-color: transparent;
     opacity: 3%;
 }
-h3{
-    color: white;
-}
 
-aside{
-    
-}
+
