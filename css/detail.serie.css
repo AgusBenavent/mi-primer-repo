@@ -129,6 +129,9 @@ i:hover{
     background-color: transparent;
     opacity: 3%;
 }
+
+
+
 @media (max-width: 1070px){
     header{
         height: auto;
@@ -174,10 +177,42 @@ i:hover{
     }
     
 }
-
-.corazonfav {
-    width: 10;
-    height: 10;
+@media (max-width: 575px){
+    .navbarra{
+        display: flex;
+        padding: 15px;  
+    }
 }
-
-
+@media (max-width: 564px){
+    .navbarra{
+        
+        padding: 10px;  
+    }
+}
+@media (max-width: 565px){
+    .navbarra{
+        
+        padding: 10px;  
+    }
+}
+@media (max-width: 564px){
+    .nav-enlace{
+        font-size: 10px;
+        width: 80px;
+    }
+}
+@media (max-width: 477px){
+    .nav-enlace{
+        font-size: 9px;
+        width: 70px;
+    }
+}
+@media (max-width: 477px){
+    .nav-enlace{
+        font-size: 7px;
+        width: 60px;
+    }
+    .form{
+        margin: 0%;
+    }
+}

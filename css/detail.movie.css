@@ -117,11 +117,16 @@ h1{
 
 i{
     font-size: 90px;
+    color: white;
 }
+
 
 i:hover{
     background-color: transparent;
     opacity: 3%;
+}
+span i{
+    font-size: 40px;
 }
 
 
@@ -204,6 +209,9 @@ i:hover{
     .nav-enlace{
         font-size: 7px;
         width: 60px;
+    }
+    .form{
+        margin: 0%;
     }
 }
 
