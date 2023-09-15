@@ -25,6 +25,10 @@ header{
 .imagenlogo{
     display: inline-block;
 }
+.camara{
+    height: 30px;
+    width: 30px;
+}
 
 .logo{
     display: inline-block;
