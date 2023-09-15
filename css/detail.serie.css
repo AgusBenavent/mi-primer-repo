@@ -119,6 +119,11 @@ i{
     
 }
 
+span i{
+    font-size: 40px;
+}
+
+
 
 i:hover{
     background-color: transparent;
