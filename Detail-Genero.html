@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WatchedTV</title>
-        <link rel="stylesheet" href="./css/detail-genero.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Heebo&family=Open+Sans&family=Oswald&family=Ruwudu:wght@500&display=swap" rel="stylesheet">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchedTV</title>
+    <link rel="stylesheet" href="./css/detail-genero.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Heebo&family=Open+Sans&family=Oswald&family=Ruwudu:wght@500&display=swap" rel="stylesheet">
+    
+</head>
 <body>
 
 <div class="contenedor">
-<header class="container1">
-   
+<header>
+    <div class="container1">
         <div class="imagenlogo">
             <a href="./pagina_principal.html"><img src="videocamera.png" class="camara"></a>
         </div>
@@ -24,37 +24,86 @@
                  WatchedTV
             </h2>
         </div>  
-
-        <div class="navbarra">
-            <nav ><!--Enlace de cada pagina-->
-                <a href="pagina_principal.html" class="nav-enlace">Inicio</a>
-                <a href="Favourite.html" class="nav-enlace">Favoritos</a>
-                <a href="Generos.html" class="nav-enlace">Generos</a>
-                <a href="#PeliculasPopulares" class="nav-enlace">Peliculas</a>
-                <a href="#SeriesPopulares" class="nav-enlace">Series</a>
-            </nav>
+    
+            <div class="navbarra">
+                <nav ><!--Enlace de cada pagina-->
+                    <a href="./pagina_principal.html" class="nav-enlace">Inicio</a>
+                    <a href="./Favourite.html" class="nav-enlace">Favoritos</a>
+                    <a href="./Generos.html" class="nav-enlace">Generos</a>
+                    <a href="./pagina_principal.html" class="nav-enlace">Peliculas</a>
+                    <a href="./pagina_principal.html" class="nav-enlace">Series</a>
+                </nav>
+            </div>
+            
+            <div class="form">
+                <form action="detail-movie.html" method="GET"><!--en el form action puede ir ./el nombre del archivo html.-->
+                    <div>
+                        <input type="text"id name="text" value="" placeholder=" Buscador" autocomplete="off"><!--Nos ofrece opciones de email que utilicemos @-->
+                        <!--placeholder es para que el texto este adentro--> 
+                        <button type="submit">Buscar</button>
+                    </div>
+                   </form>
+            </div>
         </div>
-        
-        <div class="form">
-            <form action="detail-movie.html" method="GET"><!--en el form action puede ir ./el nombre del archivo html.-->
-                <div>
-                    <input type="text"id name="text" value="" placeholder=" Buscador" autocomplete="off"><!--Nos ofrece opciones de email que utilicemos @-->
-                    <!--placeholder es para que el texto este adentro--> 
-                    <button type="submit">Buscar</button>
-                </div>
-               </form>
-        </div>
-  
-
-</header>
-<div class="separacion"></div>
+    
+    </header>
 <main>
-<h1>DETALLE GENERO</h1>
+    <div class="separacion"></div>
 
-<h2></h2>
-<h2></h2>
-<h2></h2>
+    <h1>Drama</h1>
+
+    <div class="hijo2">
+        <ul>
+           <li><h3>El cine dramático es junto a la Comedia, los principales géneros del cine y quizás de los más antiguos. <br>
+            El drama en el cine presenta historias serias, en las que prevalece el dialogo y <br>
+            la acción orientadas a generar tensión y presentar pasiones conflictivas más que generar humor.</h3></li>
+        </ul> 
+
+        </div>
+
+        <section>
+            <article class="peli1">
+                <a href="Detail-Movie.html"><img src="./img/PeliculasMasValoradas/el silencio de los inocentes.jpg" alt="" height="300px" width="200px"></a>
+            <div class="parrafo"><h3>Titulo: El silencio de los inocentes</h3>
+                <p>Fecha de estreno: 6 de junio de 1991</p>
+            </div>
+            </article>
+        
+            <article class="peli2">
+                <a href="Detail-Movie.html"><img src="./img/PeliculasMasValoradas/fight club.jpg" alt="" height="300px" width="200px"></a>
+            <div class="parrafo"><h3>Titulo: El club de la pelea</h3>
+                <p>Fecha de estreno: 4 de noviembre de 1999</p>
+            </div>
+            </article>
+        
+            <article class="peli3">
+                <a href="Detail-Movie.html"><img src="./img/PeliculasMasValoradas/forrest gump.jpg" alt="" height="300px" width="200px"></a>
+            <div class="parrafo">
+                <h3>Titulo: Forrest Gump</h3>
+                <p>Fecha de estreno: 6 de octubre de 1994</p>
+            </div>
+            </article>
+        
+            <article class="peli4">
+                <a href="Detail-Movie.html"><img src="./img/PeliculasMasValoradas/la vida es bella.jpg" alt="" height="300px" width="200px"></a>
+            <div class="parrafo"><h3>Titulo: La vida es bella</h3>
+                <p>Fecha de estreno: 18 de febrero 1999</p>
+            </div>
+            </article>
+        
+            <article class="peli5">
+                <a href="Detail-Movie.html"><img src="./img/PeliculasMasValoradas/Matrix.jpg" alt="" height="300px" width="200px"></a>
+            <div class="parrafo"><h3>Titulo: Matrix</h3>
+                <p>Fecha de estreno: 10 junio de 1999</p>
+            </div>
+            </article>
+        </section>
+
 </main>  
+
+<footer>
+    <h4>Integrantes: Catalina Rodriguez de la Torre y Agustina Benavent </h4>
+</footer>
 
 </body>
 </html>

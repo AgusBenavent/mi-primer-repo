@@ -134,6 +134,17 @@ i:hover{
     opacity: 3%;
 }
 
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+article{
+    width: 200px;
+}
 
 
 @media (max-width: 1070px){
