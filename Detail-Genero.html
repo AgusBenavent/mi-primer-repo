@@ -1,50 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WatchedTV</title>
-        <link rel="stylesheet" href="./css/detail-genero.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Heebo&family=Open+Sans&family=Oswald&family=Ruwudu:wght@500&display=swap" rel="stylesheet">
-    </head>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchedTV</title>
+    <link rel="stylesheet" href="./css/detail-genero.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Heebo&family=Open+Sans&family=Oswald&family=Ruwudu:wght@500&display=swap" rel="stylesheet">
+    
+</head>
 <body>
-    <header>
-        <div class="container1">
-            <div class="imagenlogo">
-                <a href="#"><img src="videocamera.png" height="30px" width="30px"></a>
-            </div>
-            <div class="logo">
-                <h2>
-                     WatchedTV
-                </h2>
-            </div>  
-    
-            <div class="navbarra">
-                <nav ><!--Enlace de cada pagina-->
-                    <a href="#" class="nav-enlace">Inicio</a>
-                    <a href="#" class="nav-enlace">Favoritos</a>
-                    <a href="Generos.html" class="nav-enlace">Generos</a>
-                    <a href="#" class="nav-enlace">Peliculas</a>
-                    <a href="#" class="nav-enlace">Series</a>
-                </nav>
-            </div>
-            
-            <div class="form">
-                <form action="detail-movie.html" method="GET"><!--en el form action puede ir ./el nombre del archivo html.-->
-                    <div>
-                        <input type="text"id name="text" value="" placeholder=" Buscador" autocomplete="off"><!--Nos ofrece opciones de email que utilicemos @-->
-                        <!--placeholder es para que el texto este adentro--> 
-                        <button type="submit">Buscar</button>
-                    </div>
-                   </form>
-            </div>
+
+<div class="contenedor">
+<header class="container1">
+   
+        <div class="imagenlogo">
+            <a href="./pagina_principal.html"><img src="videocamera.png" height="30px" width="30px"></a>
         </div>
-    
-    </header>
+        <div class="logo">
+            <h2>
+                 WatchedTV
+            </h2>
+        </div>  
+
+        <div class="navbarra">
+            <nav ><!--Enlace de cada pagina-->
+                <a href="pagina_principal.html" class="nav-enlace">Inicio</a>
+                <a href="Favourite.html" class="nav-enlace">Favoritos</a>
+                <a href="Generos.html" class="nav-enlace">Generos</a>
+                <a href="#PeliculasPopulares" class="nav-enlace">Peliculas</a>
+                <a href="#SeriesPopulares" class="nav-enlace">Series</a>
+            </nav>
+        </div>
+        
+        <div class="form">
+            <form action="detail-movie.html" method="GET"><!--en el form action puede ir ./el nombre del archivo html.-->
+                <div>
+                    <input type="text"id name="text" value="" placeholder=" Buscador" autocomplete="off"><!--Nos ofrece opciones de email que utilicemos @-->
+                    <!--placeholder es para que el texto este adentro--> 
+                    <button type="submit">Buscar</button>
+                </div>
+               </form>
+        </div>
+  
+
+</header>
+
 <main>
 <h1>DETALLE GENERO</h1>
 
