@@ -121,6 +121,11 @@ main{
     font-size: 30px;
     
 }
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
 
 @media (max-width: 1070px){
     header{

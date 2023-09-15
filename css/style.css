@@ -113,6 +113,9 @@ section{
     margin-left: 40px;
     
 }
+article{
+    width: 200px;
+}
 
 footer{
     text-align: center;
@@ -120,8 +123,16 @@ footer{
     color: white;
 }
 
-
-
-article{
-    width: 200px;
+@media (max-width: 1070px){
+    header{
+        height: auto;
+        padding: 20px;        
+    }
+    .navbarra{
+        display: flex;
+        padding: 20px;  
+    }
 }
+
+
+
