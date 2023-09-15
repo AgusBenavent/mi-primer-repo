@@ -99,12 +99,14 @@ button:hover{
     background-position: left ;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 500px;
    
 }
 
 .hijo2{
     width: 50vw;
     color: white;
+    margin:80px;
 }
 h1{
     background-color: black;
@@ -112,12 +114,12 @@ h1{
     text-align: center;
 }
 
-.boton{
-    font-size: 70px; 
-    
+i{
+    font-size: 90px;
 }
 
-.boton:hover{
+
+i:hover{
     background-color: transparent;
     opacity: 3%;
 }
