@@ -8,7 +8,8 @@
 
 body{
     font-family: 'DM Sans', sans-serif;
-    background-color:#9A3B3B;
+    background-color:#0C223F;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -72,6 +73,56 @@ button{
 button:hover{
     background: grey;
 }
-.imagenlogo{
+
+.separacion{
+    height: 300px;
+    background-image:url(cine.jpg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.contenedor1{
+    display:inline-block;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+.section{
+    display: flexbox;
+    height: 500px;
+    background-image:url(fightclub.jpg);
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.boton{
+    text-align: center;  
     background-color: transparent;
-    opacity: 2%;}
+    
+    
+}
+
+.boton:hover{
+    background-color: transparent;
+    opacity: 3%;
+}
+h3{
+    color: white;
+}
+
+aside{
+    
+}
