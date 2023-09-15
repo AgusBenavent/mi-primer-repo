@@ -9,6 +9,7 @@
 body{
     font-family: 'DM Sans', sans-serif;
     background-color:#0C223F;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -69,9 +70,11 @@ button{
     width: 60px;
     height: 40px;
     border-radius: 10px;}
+
 button:hover{
     background: grey;
 }
+
 .separacion{
     height: 300px;
     background-image:url(cine.jpg);
@@ -79,8 +82,135 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.hijo2{
+    width: 100vw; 
+    color: white;
+    text-align: center;
+    padding-top: 40px;
     
-main{
-    background-color:#0C223F;
-    border-radius: 10px;
+}
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+section{
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    width: 95%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
+    
+}
+
+.parrafo{
+  
+    justify-content: space-around;
+    text-align: left;
+    color: white;
+    padding-right: 40px;}
+
+
+footer{
+        text-align: center;
+        background-color: black;
+        color: white;
+    }
+    
+    
+    
+article{
+        width: 200px;
+    }
+
+
+@media (max-width: 1070px){
+    header{
+        height: auto;
+        padding: 20px;        
+    }
+    .navbarra{
+        display: flex;
+        padding: 20px;  
+    }
+    .hijo1{
+        height: 300px;
+    }
+    .hijo2{
+        margin: 0px;
+    }
+}
+@media(max-width: 970px){
+    .padre{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hijo1{
+        width: 90vw;
+        background-size: cover;
+        background-position: top;
+    }
+    .hijo2{
+        width: 90vw;
+        padding: 20px;
+    }
+    
+
+}
+
+@media (max-width: 900px){
+    .hijo1{
+        width: 90vw;
+        background-size: cover;
+    }
+    .hijo2{
+        width: 90vw;
+    }
+    
+}
+@media (max-width: 575px){
+    .navbarra{
+        display: flex;
+        padding: 15px;  
+    }
+}
+@media (max-width: 564px){
+    .navbarra{
+        
+        padding: 10px;  
+    }
+}
+@media (max-width: 565px){
+    .navbarra{
+        
+        padding: 10px;  
+    }
+}
+@media (max-width: 564px){
+    .nav-enlace{
+        font-size: 10px;
+        width: 80px;
+    }
+}
+@media (max-width: 477px){
+    .nav-enlace{
+        font-size: 9px;
+        width: 70px;
+    }
+}
+@media (max-width: 477px){
+    .nav-enlace{
+        font-size: 7px;
+        width: 60px;
+    }
+    .form{
+        margin: 0%;
+    }
 }
