@@ -8,7 +8,8 @@
 
 body{
     font-family: 'DM Sans', sans-serif;
-    background-color:#9A3B3B;
+    background-color:#0C223F;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -81,22 +82,10 @@ button:hover{
     background-size: cover;
 }
     
-main{
-    background-color:#0C223F;
-    border-radius: 10px;
+h3{
+    color: white;
 }
 
-
-.parrafo{
-    display:inline-block;
-    justify-content: space-around;
-    text-align: left;
-    color: white;
-    padding-right: 40px;}
-    
-.Fecha{
-
-padding-right: 40px;}
 
 .Texto{
     background-color: black;
@@ -113,6 +102,9 @@ section{
     margin-top: 20px;
     margin-left: 40px;
     
+}
+article{
+    width: 200px;
 }
 
 footer{
