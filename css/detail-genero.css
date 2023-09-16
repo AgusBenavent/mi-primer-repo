@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -20,7 +21,6 @@ header{
     height: 100px;
 
 }
-
 
 .imagenlogo{
     display: inline-block;
@@ -74,7 +74,6 @@ button{
     width: 60px;
     height: 40px;
     border-radius: 10px;}
-
 button:hover{
     background: grey;
 }
@@ -87,31 +86,40 @@ button:hover{
     background-size: cover;
 }
 
-.hijo2{
-    width: 100vw; 
-    color: white;
+
+.hijo1{
     text-align: center;
-    padding-top: 40px;
+    color: white;
+    margin:80px;
+}
+
+.hijo2{
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    
+    margin-bottom: 20px;
+    margin-top: 20px;
+   
     
 }
+.img{
+    width: 200px;
+    height: 300px;
+}
+
+
 h1{
     background-color: black;
     color: white;
     text-align: center;
-    
 }
 
-section{
-    padding-top: 20px;
-    display: flex;
-    justify-content:space-around;
-    flex-direction: row;
-    width: 95%;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 40px;
-    
+main{
+    background-color:#0C223F;
+    border-radius: 10px;
 }
+
 
 .parrafo{
   
@@ -120,19 +128,17 @@ section{
     color: white;
     padding-right: 40px;}
 
-
-footer{
-        text-align: center;
-        background-color: black;
-        color: white;
-    }
-    
-    
-    
 article{
         width: 200px;
     }
 
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
 
 @media (max-width: 1070px){
     header{
@@ -143,78 +149,105 @@ article{
         display: flex;
         padding: 20px;  
     }
-    .hijo1{
-        height: 300px;
-    }
+}
+@media (max-width: 1010px){
     .hijo2{
-        margin: 0px;
+        width: 0%;
+        justify-content: flex-start;
+        margin-left: 0%;
     }
 }
-@media(max-width: 970px){
-    .padre{
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 1005px){
+    .img{
+        width: 150px;
+        height: 200px;
+    }
+    
+    article{
+        width: 150px;
+    }
+    .hijo2{
+        display: flex;
+        width: 100vw;
+    
         justify-content: center;
     }
-    .hijo1{
-        width: 90vw;
-        background-size: cover;
-        background-position: top;
-    }
-    .hijo2{
-        width: 90vw;
-        padding: 20px;
-    }
-    
-
 }
-
-@media (max-width: 900px){
-    .hijo1{
-        width: 90vw;
-        background-size: cover;
-    }
-    .hijo2{
-        width: 90vw;
+@media (max-width: 800px){
+    .img{
+        width: 130px;
+        height: 200px;
     }
     
+    article{
+        width: 130px;
+        text-align: center;
+    }
+    .parrafo{
+        font-size: 10px;
+    }
+    section{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 660px){
+    .hijo2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        width: 300px;
+        height: 400px;
+    }
+    
+    article{
+        width: 300px;
+    }
+    .parrafo{
+        font-size: 20px;
+    }
 }
 @media (max-width: 575px){
-    .navbarra{
-        display: flex;
-        padding: 15px;  
-    }
-}
-@media (max-width: 564px){
-    .navbarra{
-        
-        padding: 10px;  
-    }
-}
-@media (max-width: 565px){
-    .navbarra{
-        
-        padding: 10px;  
-    }
-}
-@media (max-width: 564px){
     .nav-enlace{
         font-size: 10px;
         width: 80px;
     }
+    .form{
+        margin: 0%;
+    }
 }
-@media (max-width: 477px){
+@media (max-width: 500px){
+    .img{
+        width: 250px;
+        height: 300px;
+    }
+    
+    article{
+        width: 250px;
+    }
+    .parrafo{
+        font-size: 15px;
+    }
     .nav-enlace{
         font-size: 9px;
         width: 70px;
     }
 }
-@media (max-width: 477px){
+@media (max-width: 450px){
     .nav-enlace{
-        font-size: 7px;
+        font-size: 6px;
         width: 60px;
     }
-    .form{
-        margin: 0%;
+}
+@media (max-width: 400px){
+    .nav-enlace{
+        font-size: 5px;
+        width: 50px;
+        padding: 10px 10px;
+      
     }
+    
 }

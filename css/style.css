@@ -216,6 +216,9 @@ footer{
         font-size: 10px;
         width: 80px;
     }
+    .form{
+        margin: 0%;
+    }
 }
 @media (max-width: 500px){
     .img{
@@ -233,6 +236,7 @@ footer{
         font-size: 9px;
         width: 70px;
     }
+   
 }
 @media (max-width: 450px){
     .nav-enlace{
@@ -240,7 +244,15 @@ footer{
         width: 60px;
     }
 }
-
+@media (max-width: 400px){
+    .nav-enlace{
+        font-size: 6px;
+        width: 50px;
+        padding: 10px 15px;
+      
+    }
+    
+}
 
 
 
