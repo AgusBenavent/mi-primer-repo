@@ -98,7 +98,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     width: 50vw;
-    background-image:url(dawsoncreek.jpeg);
+    background-image: url(dawsoncreek.jpeg);
     background-position: center ;
     background-repeat: no-repeat;
     background-size: contain;
