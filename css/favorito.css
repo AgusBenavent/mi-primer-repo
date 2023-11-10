@@ -119,6 +119,11 @@ footer{
     background-color: black;
     color: white;
 }
+
+.imagenlogofooter{
+    width: 100%;
+}
+
 @media (max-width: 1070px){
     header{
         height: auto;

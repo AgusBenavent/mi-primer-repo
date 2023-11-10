@@ -16,11 +16,20 @@ window.addEventListener("keypress",function(e){
 })
 
 
+<<<<<<< HEAD
 
+=======
+let queryString = location.search;
+let queryStringObj = new URLSearchParams (queryString);
+queryStringObj.get ('buscador'); // alien
+>>>>>>> ada1a5d55b7f1524ad3751ca67d8dfb72f98b15f
 
 
 // let apiKey = ""
 
+// let cargarpeliculas = {
+//     fetch('')//Nos devuleve una promesa 
+// }
 
 
 // .then(function(data){

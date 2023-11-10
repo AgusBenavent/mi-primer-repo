@@ -146,6 +146,9 @@ article{
     width: 200px;
 }
 
+.imagenlogofooter{
+    width: 100%;
+}
 
 @media (max-width: 1070px){
     header{
