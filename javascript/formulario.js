@@ -33,24 +33,26 @@
 
 let boton = document.querySelector(".button")
 boton.addEventListener("click",function(){
-    alert("peli")
+
 });
 
 window.addEventListener("keypress",function(e){
     
     if(e.key === "Enter"){
-        this.alert("Ey")
+        
     }
 })
 
 
-let apiKey = "175e62bf80c432367c7a248221db5359"
+// let apiKey = "175e62bf80c432367c7a248221db5359"
 
-let cargarpeliculas = {
-    fetch('')//Nos devuleve una promesa 
-}
+// let cargarpeliculas = {
+//     fetch('')//Nos devuleve una promesa 
+// }
 
 
-.then(function(data){
-    for(let i= 0; i < data)
-})
+// .then(function(data){
+//     for(let i= 0; i < data)
+// })
+
+
