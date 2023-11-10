@@ -16,27 +16,12 @@ window.addEventListener("keypress",function(e){
 })
 
 
-<<<<<<< HEAD
-
-=======
+let Buscador = ""
 let queryString = location.search;
-let queryStringObj = new URLSearchParams (queryString);
-queryStringObj.get ('buscador'); // alien
->>>>>>> ada1a5d55b7f1524ad3751ca67d8dfb72f98b15f
+let queryStringObj = new URLSearchParams (queryString); //lectura de parametros
+Buscador = queryStringObj.get ('Buscador');  
 
-
-// let apiKey = ""
-
-// let cargarpeliculas = {
-//     fetch('')//Nos devuleve una promesa 
-// }
-
-
-// .then(function(data){
-//     for(let i= 0; i < data)
-// })
-
-
+let contenedor = document.querySelector("#PeliculasPopulares .pelis")
 
 
 fetch("https://api.themoviedb.org/3/discover/movie?api_key=175e62bf80c432367c7a248221db5359")//Siempre va api_key y si quiero mas parametros pongo &
@@ -44,15 +29,25 @@ fetch("https://api.themoviedb.org/3/discover/movie?api_key=175e62bf80c432367c7a2
     return response.json();
 })
 .then(function(data){
-    console.log(data);
+    console.log(data)
+    for(let i=0;i<5 ; i++){
+        contenedor.innerHTML+= `
+        <article class="peli1">
+        <a href="./detailmovie.html?id=${data.results[i].id}">
+        <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"class="img" ></a>
+        <div class="parrafo"><h3>Titulo: ${data.results[i].title}</h3>
+            <p>Fecha de estreno: ${data.results[i].release_date}</p>
+        </div>
+        </article>
+        `
 
-    // <article class="peli1">
-    //             <a href="./detailmovie.html"><img src="./img/peliculas_populares/alien.png" class="img"></a>
-    //         <div class="parrafo"><h3>Titulo: Alien</h3>
-    //             <p>Fecha de estreno: 25 de diciembre de 1979</p>
-    //         </div>
-    //         </article>
+    }
+    
 })
 .catch(function(error){
     console.log("El error es: "+ error)
 })
+
+
+
+
