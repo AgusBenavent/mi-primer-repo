@@ -43,6 +43,17 @@ window.addEventListener("keypress",function(e){
     }
 })
 
+<form action="resultados.html" method="GET">
+    <input type="text" name="buscador" value="">
+    <button type="submit">Enviar</button>
+</form>
+
+let queryString = location.search;
+let queryStringObj = new URLSearchParams (queryString);
+queryStringObj.get ('buscador'); // alien
+
+
+
 
 // let apiKey = "175e62bf80c432367c7a248221db5359"
 
