@@ -56,3 +56,5 @@ window.addEventListener("keypress",function(e){
 // })
 
 
+//QUERYSTRING
+
