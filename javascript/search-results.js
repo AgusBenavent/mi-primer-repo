@@ -14,14 +14,16 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=175e62bf80c432367c7a248
     console.log(data);
     for(let i=0;i<5 ; i++){
         Buscador.innerHTML+=
-        ` <h2>Resultados de búsqueda para:</h2> 
-        <div class = "busqueda">${data.results[i].id}</div>`
+        `
+        <div class = "busqueda">
+        <img src="https://image.tmdb.org/t/p/w500${data.results[i]}">
+        
+        </div>`
     }
 
 })
 .catch(function(error){
     console.log("El error es: "+ error)
 })
-
 
 
