@@ -1,23 +1,23 @@
 //Punto 2 - 
 
 
-let queryString = location.search;
-let queryStringObj = new URLSearchParams (queryString); //lectura d eparametros
-Buscador = queryStringObj.get ('id');  
+let queryString = location.search;//Obteniendo la query
+let queryStringObj = new URLSearchParams (queryString); //lectura d eparametros, me lo vuelve un objeto
+let Buscador = queryStringObj.get ('id');  //Es la clave el id
 
 let buscador1 = document.querySelector(".detalle")
 
-fetch(`https://api.themoviedb.org/3/discover/movie/${id}?api_key=175e62bf80c432367c7a248221db5359&name`)
+fetch(`https://api.themoviedb.org/3/movie/${Buscador}?api_key=175e62bf80c432367c7a248221db5359&name`)// Los templates me permiten tener strings con javascripys adentros
 .then(function(response){
     return response.json();
 })
 .then(function(data){
     console.log(data);
     for(let i=0;i<5  ; i++){
-    detalle.innerHTML += `
+    buscador1.innerHTML += `
     <div class="separacion"></div>
 
-    <h1>El club de la pelea</h1>
+    <h1>${data.results[i].original_title}</h1>
 
     <div class="padre">
         <div class="hijo1">

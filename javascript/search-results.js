@@ -13,11 +13,12 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=175e62bf80c432367c7a248
 .then(function(data){
     console.log(data);
     for(let i=0;i<5 ; i++){
-        Buscador.innerHTML+=
+        buscador1.innerHTML+=
         `
+        <a href= "../detailmovie.html">
         <div class = "busqueda">
         <img src="https://image.tmdb.org/t/p/w500${data.results[i]}">
-        
+        <a href= 
         </div>`
     }
 
