@@ -137,18 +137,18 @@ resultados.style.display = 'none'; // Ocultar resultados durante la búsqueda
 
 // Realizar la búsqueda con fetch 
 
-fetch(url)
-    .then(function(response) {
-        return response.json();
-    })
-    .then(function(data) {
-        // Procesar los resultados y mostrarlos en 'resultados'
+// fetch(url)
+//     .then(function(response) {
+//         return response.json();
+//     })
+//     .then(function(data) {
+//         // Procesar los resultados y mostrarlos en 'resultados'
 
-        // Una vez que los resultados están listos, ocultar el loader y mostrar los resultados
-        loader.style.display = 'none';
-        resultados.style.display = 'block';
-    })
-    .catch(function(error) {
-        console.log("El error es: " + error);
-        loader.style.display = 'none'; // En caso de error, ocultar el loader
-    });
+//         // Una vez que los resultados están listos, ocultar el loader y mostrar los resultados
+//         loader.style.display = 'none';
+//         resultados.style.display = 'block';
+//     })
+//     .catch(function(error) {
+//         console.log("El error es: " + error);
+//         loader.style.display = 'none'; // En caso de error, ocultar el loader
+//     });
