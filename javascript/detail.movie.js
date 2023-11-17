@@ -13,34 +13,35 @@ fetch(`https://api.themoviedb.org/3/movie/${Buscador}?api_key=175e62bf80c432367c
 })
 .then(function(data){
     console.log(data);
-    for(let i=0;i<5  ; i++){
+    let generos_final = ""
+    for(let i=0; i<data.genres.length; i++){ 
+        generos_final += data.genres[i].name
+        generos_final += ", ";
+    }
     buscador1.innerHTML += `
     <div class="separacion"></div>
-
-    <h1>${data.results[i].original_title}</h1>
-
+    <h1>${data.original_title}</h1> 
     <div class="padre">
-        <div class="hijo1">
-             <a href="https://www.youtube.com/watch?v=SUXWAEX2jlg"><i class="fa-solid fa-play"></i></a>
-             
-        </div>
-        <div class="hijo2">
+        <div class="hijo3">
         <ul>
-           <li><h3>Calificación (rating).</h3><img src="./img/Detail_Movie/calificacion.png"></li>
-           <li><h3>Género: Drama</h3> </li>
-           <li><h3>Fecha de estreno: 4 de noviembre de 1999</h3></li>
-           <li><h3>Sinópsis:  ${data.results[i].original_title} </h3></li>
-           <li><h3>Duración:  ${data.results[i].original_title} </h3></li>
+            <li><img src="https://image.tmdb.org/t/p/w500${data.poster_path}"class="img"></li>
+            <li><h3> Genero: ${generos_final} </h3> </li>
+            <li><h3>Fecha de estreno: ${data.release_date}</h3></li>
+            <li><h3>Sinópsis:  ${data.overview} </h3></li>
+            <li><h3>Duración:  ${data.runtime} mins </h3></li>
+            <li><h3>Calificación: ${data.popularity}</h3></li>
+            
         </ul> 
-        
-        <span><a href="./favourite.html?id=${data.results[i].id}"><i class="fa-regular fa-heart"></i></a></span>
+        <br>
+        <span><a href="./favourite.html?id=${data.id}"><i class="fa-regular fa-heart"></i></a></span>
 
         </div>
        
     </div>
     `
-    }
 })
 .catch(function(error){
     console.log("El error es: "+ error)
-})
+
+    
+}) 
