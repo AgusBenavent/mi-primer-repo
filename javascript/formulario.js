@@ -3,18 +3,23 @@
 
 //PUNTO 1
 
-let boton = document.querySelector(".button")
-boton.addEventListener("click",function(){
+// let boton = document.querySelector(".button")
+// boton.addEventListener("click",function(){
 
-});
+// });
 
-window.addEventListener("keypress",function(e){
+// window.addEventListener("keypress",function(e){
     
-    if(e.key === "Enter"){
+//     if(e.key === "Enter"){
         
-    }
-})
+//     }
+// })
 
+let loader1 = true
+let loader2 = true
+let loader3 = true
+
+let gif = document.querySelector(".loader")
 
 let Buscador = ""
 let queryString = location.search;
@@ -44,6 +49,11 @@ fetch("https://api.themoviedb.org/3/discover/movie?api_key=175e62bf80c432367c7a2
         `
 
     }
+
+    loader1= false
+    if(loader1 == false && loader2==false && loader3==false){
+        gif.style.display = "none"
+    }
     
 })
 .catch(function(error){
@@ -53,6 +63,7 @@ fetch("https://api.themoviedb.org/3/discover/movie?api_key=175e62bf80c432367c7a2
 //API para series populares
 
 let contenedor2 = document.querySelector("#SeriesPopulares .series")
+
 
 
 fetch("https://api.themoviedb.org/3/discover/tv?api_key=175e62bf80c432367c7a248221db5359")//Siempre va api_key y si quiero mas parametros pongo &
@@ -71,7 +82,10 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=175e62bf80c432367c7a2482
         </div>
 </article>`
 }
-    
+loader2= false
+if(loader1 == false && loader2==false && loader3==false){
+    gif.style.display = "none"
+}
 })
 .catch(function(error){
     console.log("El error es: "+ error)
@@ -81,6 +95,7 @@ fetch("https://api.themoviedb.org/3/discover/tv?api_key=175e62bf80c432367c7a2482
 //API para peliculas mas valoradas
 
 let contenedor3 = document.querySelector("#PeliculasValoradas .valoradas")
+
 
 
 fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=175e62bf80c432367c7a248221db5359")//Siempre va api_key y si quiero mas parametros pongo &
@@ -100,11 +115,17 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=175e62bf80c432367c7a
         </div>
 </article>`
 }
-    
+loader3= false
+if(loader1 == false && loader2==false && loader3==false){
+    gif.style.display = "none"
+}
+
 })
 .catch(function(error){
     console.log("El error es: "+ error)
 })
+
+
 
 //PUNTO EXTRAS DE GIF BUSCANDO
 let loader = document.querySelector('.loader');
