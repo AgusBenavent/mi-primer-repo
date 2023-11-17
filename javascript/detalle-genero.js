@@ -12,7 +12,7 @@ let nombre = queryStringObj.get('name') //Para tener el nombre de cada peli y se
 //Esta api la saque de discover en TMDB y con esto agarramos las id de cada peli
 let url = `https://api.themoviedb.org/3/discover/movie?api_key=175e62bf80c432367c7a248221db5359&with_genres=${idPelicula}`
 console.log(url);
-//El signo & es para poder poner mas cosas es como un and
+//El signo & es para poder poner mas cosas es como un and 
 
 let contenido = document.querySelector(".TituloGenero")
 let contenido2 = document.querySelector(".hijo2")
