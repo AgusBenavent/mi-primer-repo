@@ -106,3 +106,28 @@ fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=175e62bf80c432367c7a
     console.log("El error es: "+ error)
 })
 
+//PUNTO EXTRAS DE GIF BUSCANDO
+let loader = document.querySelector('.loader');
+let resultados = document.querySelector('.resultados');
+
+// Mostrar el loader al iniciar la búsqueda
+loader.style.display = 'block';
+resultados.style.display = 'none'; // Ocultar resultados durante la búsqueda
+
+// Realizar la búsqueda con fetch 
+
+fetch(url)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(data) {
+        // Procesar los resultados y mostrarlos en 'resultados'
+
+        // Una vez que los resultados están listos, ocultar el loader y mostrar los resultados
+        loader.style.display = 'none';
+        resultados.style.display = 'block';
+    })
+    .catch(function(error) {
+        console.log("El error es: " + error);
+        loader.style.display = 'none'; // En caso de error, ocultar el loader
+    });

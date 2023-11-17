@@ -30,10 +30,11 @@ fetch(url)
     for(let i=0; i<5 ; i++){ 
         let contenido2 = document.querySelector(".hijo2")
         contenido2.innerHTML+=
-        `<article class="peli1">
-        <a href="detailmovie.html?idPelicula=${lista[i.id]}">
-    </article>
-    `}
+        console.log(contenido)}
+    //     `<article class="peli1">
+    //     <a href="./detailmovie.html?id=${lista[i].id}">
+    // </article>
+    // `
     
 
 })
