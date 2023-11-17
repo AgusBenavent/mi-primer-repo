@@ -44,8 +44,8 @@ fetch(url2)
 
     for(let i=0; i<lista.length ; i++){ //Hasta el 12 para todos los generos
         contenido2.innerHTML+=
-        `<li class="itemaGenero"><a href="detailgenero.html?idPelicula=${lista[i].id}</a></li>
-        <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}">`
+        `<li class="itemaGenero">
+        <a href="detailgenero.html?idPelicula=${lista[i].id}&name=${lista[i].name}" class="Text">${lista[i].name}</a></li>`
     }
     return data
 
