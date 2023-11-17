@@ -28,7 +28,15 @@ fetch(url)
 
     for(let i=0; i<5 ; i++){ 
         contenido2.innerHTML+=
-        `<article class="peli1">
+        
+    // <div class="hijo1">
+    //     <ul>
+    //        <li><h3>${data.results[i].id}</h3></li>
+    //     </ul> 
+
+    // </div>
+        
+       ` <article class="peli1">
         <a href="detailmovie.html?id=${data.results[i].id}">
         <img src="https://image.tmdb.org/t/p/w500${data.results[i].backdrop_path}" alt="" height="300px" width="200px"></a>
     <div class="parrafo"><h3>Titulo: ${data.results[i].original_title}</h3>

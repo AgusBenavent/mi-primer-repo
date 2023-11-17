@@ -45,3 +45,31 @@ fetch(`https://api.themoviedb.org/3/movie/${Buscador}?api_key=175e62bf80c432367c
 
     
 }) 
+
+let recomendaciones = document.querySelector(".recomendaciones")
+
+fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=175e62bf80c432367c7a248221db5359`)
+.then(function(response){
+    return response.json()
+})
+
+.then(function(data){
+    for(let i=0; i< 5; i++){ 
+    console.log(data);
+    recomendaciones.innerHTML += `
+    <a href="./detailmovie.html?id=${data.results[i].id}">
+    <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"height="400px" witdh="350px">
+    <h2>${data.results[i].title}</h2>
+    </a>
+    `
+    }
+})
+
+.catch(function(error){
+    console.log("El error es: "+ error)
+
+    
+})
+
+// boton le doy click le pongo un evento 
+// Tengo que llamar al endpoint de la api y le paso el id de la pelicula donde estoy 
