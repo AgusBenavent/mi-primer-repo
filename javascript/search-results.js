@@ -34,7 +34,7 @@ fetch(`https://api.themoviedb.org/3/search/multi?api_key=175e62bf80c432367c7a248
             </a>
     `;} 
     
-}})             // CONECTAR A CADA DETALLE
+}})      
     
 
 .catch(function(error){
