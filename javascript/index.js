@@ -1,20 +1,5 @@
 
 
-
-//PUNTO 1
-
-// let boton = document.querySelector(".button")
-// boton.addEventListener("click",function(){
-
-// });
-
-// window.addEventListener("keypress",function(e){
-    
-//     if(e.key === "Enter"){
-        
-//     }
-// })
-
 let loader1 = true
 let loader2 = true
 let loader3 = true

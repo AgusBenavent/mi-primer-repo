@@ -156,6 +156,40 @@ article{
     width: 100%;
 }
 
+#recomendaciones{
+   
+        font-size: 30px;
+        color: white;
+        display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+}
+
+#recomendaciones:hover{
+    background-color: transparent;
+    opacity: 3%;
+}
+.reco {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.reco a {
+    display: inline-block; /* Hacer el enlace de la imagen de película de ancho completo */
+}
+
+.reco img {
+    height: 400px;
+    width: 350px;
+    display: inline-block; /* Asegurar que la imagen tenga un espacio suficiente */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+.parrafo {
+    text-align: left; /* Alinear el texto a la izquierda */
+}
 
 
 

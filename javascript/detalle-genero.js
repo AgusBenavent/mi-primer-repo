@@ -29,13 +29,6 @@ fetch(url)
     for(let i=0; i<5 ; i++){ 
         contenido2.innerHTML+=
         
-    // <div class="hijo1">
-    //     <ul>
-    //        <li><h3>${data.results[i].id}</h3></li>
-    //     </ul> 
-
-    // </div>
-        
        ` <article class="peli1">
         <a href="detailmovie.html?id=${data.results[i].id}">
         <img src="https://image.tmdb.org/t/p/w500${data.results[i].backdrop_path}" alt="" height="300px" width="200px"></a>
@@ -51,12 +44,3 @@ fetch(url)
     
 })
 
-
-{/* <div class="hijo1">
-        <ul>
-           <li><h3>El cine dramático es junto a la Comedia, los principales géneros del cine y quizás de los más antiguos. <br>
-            El drama en el cine presenta historias serias, en las que prevalece el dialogo y <br>
-            la acción orientadas a generar tensión y presentar pasiones conflictivas más que generar humor.</h3></li>
-        </ul> 
-
-        </div> */}

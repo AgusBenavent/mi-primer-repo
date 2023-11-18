@@ -46,3 +46,42 @@ fetch(`https://api.themoviedb.org/3/tv/${Buscador}?api_key=175e62bf80c432367c7a2
 
     
 }) 
+
+let recomendaciones1 = document.querySelector("#recomendaciones")
+recomendaciones1.addEventListener("click",function(){
+
+let recomendaciones2 = document.querySelector(".reco")
+
+    fetch(`https://api.themoviedb.org/3/tv/${Buscador}/recommendations?api_key=175e62bf80c432367c7a248221db5359`)
+    .then(function(response){
+        return response.json()
+    })
+    
+    .then(function(data){
+        console.log(data)
+
+        
+        for(let i=0; i< 5; i++){ 
+
+        recomendaciones2.innerHTML += 
+        `
+    <section class="reco">
+
+        <a href="./detailmovie.html?id=${data.results[i].id}"></a>
+        <img src="https://image.tmdb.org/t/p/w500${data.poster_path}"height="400px" witdh="350px">
+        <div class="parrafo"><h3> Titulo: ${data.results[i].original_title}</h3>
+        <p>Fecha de estreno: ${data.first_air_date}</p>
+        <h2>${data.results[i].title}</h2>
+        
+    </section>`
+        }
+        recomendaciones1.innerHTML += html;
+    })
+    
+    .catch(function(error){
+        console.log("El error es: "+ error)
+    
+        
+    })
+
+})

@@ -5,6 +5,8 @@ let queryString = location.search;//Obteniendo la query
 let queryStringObj = new URLSearchParams (queryString); //lectura d eparametros, me lo vuelve un objeto
 let Buscador = queryStringObj.get ('id');  //Es la clave el id
 
+let idPelicula = queryStringObj.get('id');
+
 let buscador1 = document.querySelector(".detalle")
 
 fetch(`https://api.themoviedb.org/3/movie/${Buscador}?api_key=175e62bf80c432367c7a248221db5359&name`)// Los templates me permiten tener strings con javascripys adentros
@@ -46,30 +48,45 @@ fetch(`https://api.themoviedb.org/3/movie/${Buscador}?api_key=175e62bf80c432367c
     
 }) 
 
-let recomendaciones = document.querySelector(".recomendaciones")
 
-fetch(`https://api.themoviedb.org/3/movie/top_rated?api_key=175e62bf80c432367c7a248221db5359`)
-.then(function(response){
-    return response.json()
-})
+let recomendaciones1 = document.querySelector("#recomendaciones")
+recomendaciones1.addEventListener("click",function(){
 
-.then(function(data){
-    for(let i=0; i< 5; i++){ 
-    console.log(data);
-    recomendaciones.innerHTML += `
-    <a href="./detailmovie.html?id=${data.results[i].id}">
-    <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"height="400px" witdh="350px">
-    <h2>${data.results[i].title}</h2>
-    </a>
-    `
-    }
-})
+let recomendaciones2 = document.querySelector(".reco")
 
-.catch(function(error){
-    console.log("El error es: "+ error)
-
+    fetch(`https://api.themoviedb.org/3/movie/${Buscador}/recommendations?api_key=175e62bf80c432367c7a248221db5359`)
+    .then(function(response){
+        return response.json()
+    })
     
+    .then(function(data){
+        console.log(data)
+
+        
+        for(let i=0; i< 5; i++){ 
+
+        recomendaciones2.innerHTML += 
+        `
+    <section class="reco">
+
+        <a href="./detailmovie.html?id=${data.results[i].id}"></a>
+        <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"height="400px" witdh="350px">
+        <div class="parrafo"><h3> Titulo: ${data.results[i].original_title}</h3>
+        <p>Fecha de estreno: ${data.results[i].release_date}</p>
+        <h2>${data.results[i].title}</h2>
+        
+    </section>`
+        }
+        recomendaciones1.innerHTML += html;
+    })
+    
+    .catch(function(error){
+        console.log("El error es: "+ error)
+    
+        
+    })
+
 })
 
-// boton le doy click le pongo un evento 
-// Tengo que llamar al endpoint de la api y le paso el id de la pelicula donde estoy 
+
+
