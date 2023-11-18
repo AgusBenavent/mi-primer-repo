@@ -16,6 +16,7 @@ console.log(url);
 
 let contenido = document.querySelector(".TituloGenero")
 let contenido2 = document.querySelector(".hijo2")
+let resultado = document.querySelector(".resultado")
 
 fetch(url)
 .then(function(response){
@@ -23,22 +24,27 @@ fetch(url)
 })
 .then(function(data){
     console.log(data);
+    if(data.results.lenght === 0){
+        resultado.innerHTML= "No hay ese genero"
+    }
+    else{
+        contenido.innerHTML = `<h1 class="TituloGenero">${nombre}</h1>`
+    
+        for(let i=0; i<5 ; i++){ 
+            contenido2.innerHTML+=
+            
+           ` <article class="peli1">
+            <a href="detailmovie.html?id=${data.results[i].id}">
+            <img src="https://image.tmdb.org/t/p/w500${data.results[i].backdrop_path}" alt="" height="300px" width="200px"></a>
+        <div class="parrafo"><h3>Titulo: ${data.results[i].original_title}</h3>
+            <p>Fecha de estreno: ${data.results[i].release_date}</p>
+        </div>
+        </article>
+        `}
+    
+    }})
 
-    contenido.innerHTML = `<h1 class="TituloGenero">${nombre}</h1>`
-
-    for(let i=0; i<5 ; i++){ 
-        contenido2.innerHTML+=
-        
-       ` <article class="peli1">
-        <a href="detailmovie.html?id=${data.results[i].id}">
-        <img src="https://image.tmdb.org/t/p/w500${data.results[i].backdrop_path}" alt="" height="300px" width="200px"></a>
-    <div class="parrafo"><h3>Titulo: ${data.results[i].original_title}</h3>
-        <p>Fecha de estreno: ${data.results[i].release_date}</p>
-    </div>
-    </article>
-    `}
-
-})
+    
 .catch(function(error){
     console.log("El error es: "+ error)
     

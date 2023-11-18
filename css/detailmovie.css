@@ -172,24 +172,32 @@ article{
 .reco {
     display: inline-block;
     margin: 10px;
-    text-align: center;
+    
     
 }
 
 .reco a {
-    display: inline-block; /* Hacer el enlace de la imagen de película de ancho completo */
+    display: flex; 
 }
 
 .reco img {
-    height: 400px;
-    width: 350px;
-    display: inline-block; /* Asegurar que la imagen tenga un espacio suficiente */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+    display: block;
+    display:flex; 
+    margin-bottom: 10px; 
+    
+    justify-content: center
 }
 
 .parrafo {
-    text-align: left; /* Alinear el texto a la izquierda */
+    display: block;
+    text-align: left;
+   
 }
+.hola{
+    display: block;
+    }
+
+
 
 
 
