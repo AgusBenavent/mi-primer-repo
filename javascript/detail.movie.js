@@ -69,7 +69,7 @@ let recomendaciones2 = document.querySelector(".reco")
         `
     <section class="reco">
 
-        <a href="./detailmovie.html?id=${data.results[i].id}"></a>
+        <a href="./detailmovie.html?id=${data.results[i].id}">
         <img src="https://image.tmdb.org/t/p/w500${data.results[i].poster_path}"height="400px" witdh="350px">
         <div class="parrafo"><h3> Titulo: ${data.results[i].original_title}</h3>
         <p>Fecha de estreno: ${data.results[i].release_date}</p>

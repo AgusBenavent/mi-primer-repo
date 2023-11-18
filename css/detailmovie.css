@@ -169,36 +169,26 @@ article{
     background-color: transparent;
     opacity: 3%;
 }
-.reco {
-    display: inline-block;
-    margin: 10px;
-    
-    
-}
 
-.reco a {
-    display: flex; 
-}
 
-.reco img {
-    display: block;
-    display:flex; 
-    margin-bottom: 10px; 
-    
-    justify-content: center
-}
-
-.parrafo {
-    display: block;
-    text-align: left;
-   
-}
-.hola{
-    display: block;
+.reco{
+        display: flex;
+        justify-content:space-around;
+        flex-direction: row;
+        
+        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 40px;
     }
 
-
-
+a {
+        text-decoration: none;
+      }
+      
+    
+a {
+        color: #000; 
+      }
 
 
 
